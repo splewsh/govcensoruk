@@ -33,9 +33,13 @@
     <p>But I’ll tell you: it’s the beginning signs of government censorship, surveillance and an authoritarian state.</p>
     <p>We must fight back. Every time you see a post online, raise awareness about these issues by posting <a href="https://www.govcensor.uk/">govcensor.uk</a> in the comments. It will link them to this video. Every time you see any government employee, tell them to defend the right to protest. This will help with eventually protesting everything discussed above.</p>
     <p>If you’re reading this on <a href="https://www.govcensor.uk/">govcensor.uk</a>, there will be a link, that you can put an email in to stay up to date with how well things are going.</p>
-    <iframe class="email-list" src="https://govcensor.substack.com/embed?transparent=1" width="480" height="150" style="display: block; margin: 0 auto; border: 0; background: transparent" frameborder="0" scrolling="no"></iframe>
+    <iframe class="email-list" src="https://govcensor.substack.com/embed?transparent=1" width="480" height="150" style="display: block; margin: 0 auto; border: 0; background: transparent"></iframe>
 </body>
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     html {
         height: 100%;
         width: 100%;
@@ -45,13 +49,15 @@
 
     body {
         margin: 0 auto;
-        padding: 1rem;
+        padding: 1.5rem;
         max-width: 700px;
         font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
     }
 
     h1 {
         font-size: 2rem;
+        line-height: 1.2;
     }
 
     p {
@@ -61,6 +67,35 @@
     .email-list {
         display: block;
         margin: 0 auto;
+        max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.05rem;
+        }
+
+        .email-list {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 360px) {
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
     }
 </style>
 </html>
